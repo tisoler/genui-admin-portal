@@ -71,8 +71,11 @@ const StatusCell = ({ status } : { status: string }) => (
 )
 
 const ProgressCell = ({ progress, targetAmount, height = 3 }: { progress: number, targetAmount: number, height?: number }) => (
-  <div className="relative w-full bg-gray-200 rounded-sm" style={{ height: `${height}px` }}>
-    <div className={`absolute bg-black rounded-sm`} style={{ width: `${Math.round((progress / targetAmount) * 10000) / 100}%`, height: `${height}px` }}/>
+  <div className="flex flex-col items-center">
+    <span className="text-sm text-black font-bold">${progress}</span>
+    <div className="relative w-full bg-gray-200 rounded-sm" style={{ height: `${height}px` }}>
+      <div className={`absolute bg-black rounded-sm`} style={{ width: `${Math.round((progress / targetAmount) * 10000) / 100}%`, height: `${height}px` }}/>
+    </div>
   </div>
 )
 
