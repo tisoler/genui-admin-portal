@@ -31,9 +31,8 @@ export default function Sidebar() {
 					{ options?.map((option, idx) => (
 						option.href ?
 							(
-								<div onClick={() => setSelectedOptionIndex(idx)}>
+								<div key={idx} onClick={() => setSelectedOptionIndex(idx)}>
 									<Link
-										key={idx}
 										href={option.href}
 										aria-label={option.text}
 										className={`flex items-center h-[31px] my-3 text-left pl-2 rounded-sm ${selectedOptionIndex === idx ? `bg-primary` : 'hover:bg-gray-100'}`}

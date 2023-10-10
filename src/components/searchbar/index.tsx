@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import searchIcon from '../../../public/search.svg'
+import Image from 'next/image'
 
 export default function Searchbar({ searchCallBack } = { searchCallBack: (searchText: string) => {} }) {
   const inputRef = useRef<HTMLInputElement>(null)
@@ -18,7 +19,7 @@ export default function Searchbar({ searchCallBack } = { searchCallBack: (search
   return (
     <div className='w-full flex justify-end'>
       <div className='h-[45px] bg-gray-50 border-gray-200 border rounded-md flex pl-2'>
-        <img src={searchIcon.src} width={18} height={18} onClick={inputFocus} />
+        <Image alt='Search icon' src={searchIcon.src} width={18} height={18} onClick={inputFocus} />
         <input
           ref={inputRef}
           className={`pl-1.5 pr-3.5 py-3 outline-none`}
