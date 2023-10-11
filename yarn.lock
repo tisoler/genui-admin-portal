@@ -192,6 +192,16 @@
   dependencies:
     tslib "^2.4.0"
 
+"@trpc/client@^10.40.0":
+  version "10.40.0"
+  resolved "https://registry.yarnpkg.com/@trpc/client/-/client-10.40.0.tgz#edf1eb1221c611de911a85b3fa433fbb1421a47b"
+  integrity sha512-bT6BcdWjj0KzGQiimE6rB2tIaRYX0Ear4Gthb5szN/c01wrP0yC1Fbz2uCcm/QTVAwu4Lve5M+YjPoEaTHG6lg==
+
+"@trpc/react-query@^10.40.0":
+  version "10.40.0"
+  resolved "https://registry.yarnpkg.com/@trpc/react-query/-/react-query-10.40.0.tgz#11be7e6860417aa699555e2f2757c18028f8fbc3"
+  integrity sha512-DpJrV3lmYNo9xtPtcg49lfh9CUFap3ZivjhlSmfe4QPf7H6xBjAE+ml4OdJ0RmKvSTFvbLSOiNdB1k5O8zIdzQ==
+
 "@types/json-schema@^7.0.9":
   version "7.0.13"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.13.tgz#02c24f4363176d2d18fc8b70b9f3c54aba178a85"
@@ -1073,6 +1083,11 @@ file-entry-cache@^6.0.1:
   integrity sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==
   dependencies:
     flat-cache "^3.0.4"
+
+file-saver@^2.0.2:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/file-saver/-/file-saver-2.0.5.tgz#d61cfe2ce059f414d899e9dd6d4107ee25670c38"
+  integrity sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==
 
 fill-range@^7.0.1:
   version "7.0.1"
@@ -2033,6 +2048,13 @@ queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
+
+react-csv-downloader@^2.9.1:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/react-csv-downloader/-/react-csv-downloader-2.9.1.tgz#ccee0b6b5bb5f960f7e70788413a17b97a42ba1e"
+  integrity sha512-bjd+tRkzsoOkaxeFFf2PMevim9LZRi70KzNXbVKyljzr0/V+grFa6zJNWEZFdPI57JWKpE6ZZek1vaLxQjTttg==
+  dependencies:
+    file-saver "^2.0.2"
 
 react-dom@^18:
   version "18.2.0"

@@ -10,14 +10,16 @@ interface SidebarContext {
    sidebarOpen: boolean
    options: SibebarOption[]
    switchSidebarOpen: () => void
-   setSidebarOptions: (options: SibebarOption[]) => void
+   setSidebarOptions: (options: SibebarOption[]) => void,
+   changeSidebarStatus: (options: boolean) => void,
 }
 
 export const SidebarContext = createContext<SidebarContext>({
    sidebarOpen: false,
    options: [],
    switchSidebarOpen: () => {},
-   setSidebarOptions: (options: SibebarOption[]) => {}
+   setSidebarOptions: (options: SibebarOption[]) => {},
+   changeSidebarStatus: (options: boolean) => {},
 })
 
 export const useSidebarContext = () => {
@@ -32,6 +34,10 @@ export default function SidebarProvider({ children }: { children: ReactNode }) {
       setSidebarOpen(prevState => !prevState)
    }
 
+   const changeSidebarStatus = (value: boolean) => {
+      setSidebarOpen(value)
+   }
+
    const setSidebarOptions = (newOptions: SibebarOption[]) => {
       setOptions(newOptions)
    }
@@ -42,7 +48,8 @@ export default function SidebarProvider({ children }: { children: ReactNode }) {
             sidebarOpen,
             options,
             switchSidebarOpen,
-            setSidebarOptions
+            setSidebarOptions,
+            changeSidebarStatus,
          }}
       >
          {children}

@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 8085",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 8085",
     "lint": "next lint"
   },
   "dependencies": {
+    "@trpc/client": "^10.40.0",
+    "@trpc/react-query": "^10.40.0",
     "next": "13.5.4",
     "react": "^18",
+    "react-csv-downloader": "^2.9.1",
     "react-dom": "^18"
   },
   "devDependencies": {

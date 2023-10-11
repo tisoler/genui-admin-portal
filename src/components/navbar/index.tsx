@@ -12,22 +12,25 @@ export default function Navbar() {
   const { switchSidebarOpen } = useSidebarContext()
   const pathname = usePathname()
 
+  /*
+    <button
+      className="md:hidden"
+      onClick={() => {
+        switchSidebarOpen()
+      }}
+    >
+      <Image
+        src={menuIcon.src}
+        alt="Menu button"
+        width={40}
+        height={40}
+      />
+    </button>
+  */
+
   return (
     <nav className="z-20 fixed top-0 left-0 right-0 h-[60px] bg-white flex px-2 shadow-[0_4px_4px_0_rgba(0,0,0,0.15)] items-center justify-start">
-      <button
-        className="md:hidden"
-        onClick={() => {
-          switchSidebarOpen()
-        }}
-      >
-        <Image
-          src={menuIcon.src}
-          alt="Menu button"
-          width={40}
-          height={40}
-        />
-      </button>
-      <Link href="/" className="mx-5 md:mx-40">
+      <Link href="/" className="ml-5 mr-5 md:mr-40">
         <Image
           src={logo.src}
           alt="Company Logo"

@@ -1,14 +1,16 @@
 'use client'
 import { useSidebarContext } from "../../contexts/sidebarContext"
-import { useEffect } from "react"
 
 export default function ResourcesScreen() {
-  const { sidebarOpen, setSidebarOptions } = useSidebarContext()
-
+  const { sidebarOpen, setSidebarOptions, changeSidebarStatus } = useSidebarContext()
+/*
   useEffect(() => {
     // Clean sidebar options
-    setSidebarOptions([])
+    setSidebarOptions([{ text: 'Option 1', href: '/resources' }, { text: 'Option 2', href: '/resources' }])
+    // Show sidebar
+    changeSidebarStatus(true)
   }, [])
+  */
 
   return <>Resources</>
 }
