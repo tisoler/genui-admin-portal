@@ -33,7 +33,7 @@ export default function Searchbar() {
         <Image alt='Search icon' src={searchIcon.src} width={18} height={18} onClick={inputFocus} />
         <input
           ref={inputRef}
-          className={`pl-1.5 pr-3.5 py-3 outline-none rounded-md`}
+          className={`bg-gray-50 pl-1.5 pr-3.5 py-3 outline-none rounded-md`}
           value={searchText}
           onChange={(evt) => handleSearch(evt?.target?.value)}
           placeholder='Search'

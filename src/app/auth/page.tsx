@@ -1,6 +1,6 @@
 
 
-const SigIn = () => {
+export default function SigIn() {
 
   return (
     <div>
